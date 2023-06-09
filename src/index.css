@@ -1,0 +1,36 @@
+:root {
+  --clr-purple: #5d4092;
+  --clr-orange: #feac00;
+  --clr-blue: #300aab;
+  --clr-yellow: #f5e901;
+  --clr-white: #fcfcfc;
+  --clr-red: #e0144c;
+  --clr-green: #54b435;
+  --clr-black: #0000;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-2xl: 1.5rem;
+  --text-5xl: 3rem;
+}
+.main {
+  border: 3px solid var(--clr-orange);
+  margin-top: 200px;
+  margin-left: 600px;
+  padding: 5px;
+  width: 30vh;
+  height: 27vh;
+}
+.decrease-btn {
+  background-color: var(--clr-orange);
+  border: none;
+}
+.reset-btn {
+  background-color: var(--clr-red);
+  border: none;
+}
+.increase-btn {
+  background-color: var(--clr-green);
+  border: none;
+}
