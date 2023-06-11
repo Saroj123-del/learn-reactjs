@@ -7,7 +7,6 @@ body {
   gap: 20px;
 }
 p {
-  display: none;
 }
 h1 {
   color: var(--clr-white);
