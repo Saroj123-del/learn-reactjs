@@ -16,11 +16,11 @@
 }
 .main {
   border: 3px solid var(--clr-orange);
-  margin-top: 200px;
-  margin-left: 600px;
+  /* margin-top: 200px; */
+  /* margin-left: 600px; */
   padding: 5px;
-  width: 30vh;
-  height: 27vh;
+  /* width: 30vh; */
+  /* height: 27vh; */
 }
 .decrease-btn {
   background-color: var(--clr-orange);
@@ -33,4 +33,20 @@
 .increase-btn {
   background-color: var(--clr-green);
   border: none;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image img {
+  height: 50px;
+  width: 50px;
+}
+.Countries {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }

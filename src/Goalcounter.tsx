@@ -1,19 +1,8 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-
-function Helloworld(props: { name: string }) {
-  return <div>Hello {props.name}</div>;
-}
-
-export function Counter() {
+export function Goalcounter(props: { countryName: string; flagUrl: string }) {
   const [count, setCount] = useState(0);
-  const [backgroundcolor] = useState("#5d4092");
-  let errorAbove10 = "No error";
-  if (count > 10) {
-    errorAbove10 = (
-      <p style={{ color: "white" }}>Error cannot count above 10</p>
-    );
-  }
+
   return (
     <div className="main">
       <style jsx>
@@ -24,7 +13,11 @@ export function Counter() {
           }
         `}
       </style>
-      <h1 style={{ textAlign: "center" }}>Counter</h1>
+      <div className="image">
+        <img src={props.flagUrl}></img>
+        <p>Flags of:</p>
+        <h2>{props.countryName}</h2>
+      </div>
       {/* <p>This is used to count numbers.</p> */}
       <h2>{count}</h2>
       <div className={styles.btnContainer}>
@@ -60,19 +53,6 @@ export function Counter() {
           +1
         </button>
       </div>
-      {/* {count > 10 ? (
-        <p style={{ color: "white" }}>Error cannot count above 10</p>
-      ) : (
-        "NO error"
-      )}
-      {count < 0 ? (
-        <p style={{ color: "white" }}>Error cannot count below 0</p>
-      ) : (
-        "No error"
-      )} */}
-      {errorAbove10}
-      <Helloworld name="saroj"></Helloworld>
-      <Helloworld name={"user two"}></Helloworld>
     </div>
   );
 }
