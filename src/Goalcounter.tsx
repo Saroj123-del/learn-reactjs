@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-export function Goalcounter(props: { countryName: string; flagUrl: string }) {
+
+export function Goalcounter(props: { countryName: string; flagUrl?: string }) {
   const [count, setCount] = useState(0);
 
   return (
@@ -14,8 +15,8 @@ export function Goalcounter(props: { countryName: string; flagUrl: string }) {
         `}
       </style>
       <div className="image">
-        <img src={props.flagUrl}></img>
-        <p>Flags of:</p>
+        {props.flagUrl ? <img src={props.flagUrl}></img> : <p>No image</p>}
+
         <h2>{props.countryName}</h2>
       </div>
       {/* <p>This is used to count numbers.</p> */}
