@@ -4,7 +4,7 @@ import "./index.css";
 import { Counter } from "./App";
 import { Goalcounter } from "./Goalcounter";
 import { Scorelist } from "./components/scorelist";
-import { form } from "./components/formtab";
+import { tableform } from "./components/formtab";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Goalcounter countryName={"Nepal"} flagUrl={"/Nepal.png"} />
         <Scorelist></Scorelist>
       </div>
-      <formtab></formtab>
+      <formtab />
       <div className="Countries2">
         <Goalcounter countryName={"India"} />
         <Scorelist></Scorelist>
