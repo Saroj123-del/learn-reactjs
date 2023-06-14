@@ -5,10 +5,11 @@ import { Counter } from "./App";
 import { Goalcounter } from "./Goalcounter";
 import { Scorelist } from "./components/scorelist";
 import { Newtable } from "./components/datatable";
+import { Buttonbtn } from "./Button2";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <div className="main-div">
+    {/* <div className="main-div">
       <div className="Countries">
         <Goalcounter countryName={"Nepal"} flagUrl={"/Nepal.png"} />
         <Scorelist></Scorelist>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Goalcounter countryName={"India"} />
         <Scorelist></Scorelist>
       </div>
-    </div>
+    </div> */}
+    <Buttonbtn></Buttonbtn>
   </React.StrictMode>
 );
